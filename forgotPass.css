@@ -1,0 +1,98 @@
+﻿body {
+    background-image : url("pics/slideback.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.textbox {
+    border-radius: 10px;
+width: 287px;text-align: center;
+}
+.text {
+    font-size: 20px;
+color: #000;
+font-family: 'Arimo', sans-serif;
+text-shadow: 2px 2px #d7d7d7;
+}
+.ques {
+    text-align: center;
+margin: 72px 0px 213px 0px;
+}
+#Label1 {
+    font-size: 35px;
+color: #800000;
+font-family: 'Arimo', sans-serif;
+//text-shadow: 2px 2px #adadad;}
+#Label16 {
+    font-size: 35px;
+color: #800000;
+font-family: 'Arimo', sans-serif;
+//text-shadow: 2px 2px #adadad;}
+.sidenav {
+    height: 100%;
+    width: 622px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: url("pics/glass.png");
+    background-size: 461px;
+    //background-repeat: no-repeat;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+#mySidenav {
+    position: absolute;
+    left: -622px;
+    width: 622px;
+    height: 100%;
+    -webkit-animation: slide .5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 1s;
+}
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+.button {
+   position: relative;
+background-color: #4CAF50;
+border: none;
+font-size: 20px;
+color: #FFFFFF;
+padding: 5px;
+width: 152px;
+text-align: center;
+-webkit-transition-duration: 0.4s;
+transition-duration: 0.4s;
+text-decoration: none;
+overflow: hidden;
+cursor: pointer;
+border-radius: 26px;
+}
+
+.button:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}

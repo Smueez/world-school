@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>World's School</title>
+	<link rel="stylesheet" type="text/css" href="story.css">
+    <link rel="icon" href="pics/logo.png">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Nanum+Brush+Script|Shadows+Into+Light" rel="stylesheet">
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<script src="storypage.js"></script>
+	<form>
+	<div>
+		<div id="navbar">
+			<img src="pics/logo.png" style="margin: 0px 0px 40px -513px; width: 52px; ">
+  <a href="http://localhost:63681/HtmlPage.html" style="background-color: #94FF94; font-size: 19px " class="logo"><font color="#272822">WORLD'S SCHOOL</font></a>
+  <a href="https://www.wikipedia.org/" target="_blank">Wikipedia</a>
+  <a href="https://www.quora.com/" target="_blank">Quora</a>
+  <a href="https://stackoverflow.com/" target="_blank">Stackoverflow</a>
+  <button  id="signid" class="signin" style="display: block;">Sign in</button>
+  <button class="signup" data-toggle="modal" data-target="#myModal" style="display: none"><img src="pics/profile.jpg" style="width: 40px;" /> Anonymous</button>
+  <script src="menu.js">  </script>
+</div>
+		</div>
+
+		<div >
+            <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg" style="width: 1565px;">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">World's School</h4>
+        </div>
+        <div class="modal-body">
+           <img src="pics/profile.jpg" class="img-circle" alt="Cinque Terre" style="width: 290px; margin: 20px 20px 20px 212px;">
+            <div style="margin: -322px 0px 0px 0px; position: relative">
+          <h3>Name:</h3><p>Anonymus</p>
+            <h3>Birth Date:</h3><span><p>DD-MMM-YYY</p></span>
+            <h3>Country:</h3><p>Anonymus</p>
+            <h3>Occupation:</h3><p>Anonymus</p>
+                <h3>Instutiation:</h3><p>Anonymus</p>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+			<div id="myModall" class="modal">
+  <div class="modal-content">
+    <span class="closee" >&times;</span>
+    <img src="pics/logo.png" style="width: 90px;margin: 0px 0px 0px 140px;">
+    <h1 class="spanwc">Wolrd's School</h1>
+    <p style="color: red;text-align: center; display: none;" id="correct">The Email/Password is incorrect. Please try again!</p>
+    <form style="text-align: center;">
+    	<h2>Email:</h2><br>
+    	<input type="Email" name="Email" id="email" class="emailclss" placeholder="someone@abc.com"><br>
+    	<h2>Password:</h2><br>
+    	<input type="Password" name="Password" id="Password" class="emailclss" placeholder="XXXXXX"><br><br>
+    	<div>
+    		<a href="#" style="text-decoration: none;">Forgot Password!</a><a href="http://localhost:63681/signup.html" style="text-decoration: none; margin: -19px 5px -17px 89px;">Sign Up!</a>
+    	</div><br>
+    	<button class="submit">Sign In</button>
+    </form>
+  </div>
+
+</div>
+<script src="sign.js"></script>
+
+			<div id="fadedsrch" onclick="clck()" onmouseover="mouseOver()" onmouseout="mouseOut()" class="element"><i onclick="#" class="fa fa-search"></i><input type="text" name="search" placeholder="search..."></div>
+			<script src="faded.js"></script>
+			<div class="catagori">
+				<h3 class="ref">References</h3>
+				<div id="mySidenav" class="sidenav">
+  					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  					<h2 class="heading">Literature</h2>
+  					<a href="https://www.britannica.com/art/English-literature" target="_blank">English</a>
+  					<a href="https://www.ebanglalibrary.com/" target="_blank">Bangla</a>
+  					<a href="http://www.literature.org.cn/" target="_blank">China</a>
+  					<a href="https://www.enforex.com/espanol/cultura/literatura-espanola.html" target="_blank">Spaniol</a>
+
+				</div>
+				<div id="main">
+  					<span style="font-size:20px;cursor:pointer" onclick="openNav()" id="mainlec">&#9776; Literature</span>
+				</div>
+				<div id="mySidenav1" class="sidenav1">
+  					<a href="javascript:void(0)" class="closebtn1" onclick="closeNav1()">&times;</a>
+  					<h2 class="heading">Math</h2>
+  					<a href="https://www.khanacademy.org/math/trigonometry" target="_blank">Trigonometric</a>
+  					<a href="https://www.khanacademy.org/math/geometry-home" target="_blank">Geometric</a>
+  					<a href="https://www.khanacademy.org/math/algebra" target="_blank">Algebra</a>
+  					<a href="https://www.mathsisfun.com/numbers/complex-numbers.html" target="_blank">Complex Number</a>
+  					<a href="https://www.khanacademy.org/math/differential-calculus/basic-differentiation-dc" target="_blank">Differentiation</a>
+  					<a href="http://www.mathsisfun.com/calculus/integration-introduction.html" target="_blank">Integration</a>
+				</div>
+				<div id="main1">
+  					<span style="font-size:20px;cursor:pointer" onclick="openNav1()">&#9776; Math</span>
+				</div>
+				<div id="mySidenav2" class="sidenav2">
+  					<a href="javascript:void(0)" class="closebtn2" onclick="closeNav2()">&times;</a>
+  					<h2 class="heading">Programming</h2>
+  					<a href="https://www.tutorialspoint.com/objective_c/" target="_blank">C</a>
+  					<a href="http://www.cplusplus.com/doc/tutorial/" target="_blank">C++</a>
+  					<a href="https://www.java.com/" target="_blank">JAVA</a>
+  					<a href="https://www.python.org/" target="_blank">Python</a>
+  					<a href="http://www.ruby-lang.org/" target="_blank">RUBY</a>
+  					<a href="http://www.php.net/" target="_blank">PHP</a>
+  					<a href="https://www.w3schools.com/asp/default.asp" target="_blank">ASP.NET/C#</a>
+  					<a href="https://www.w3schools.com/html/" target="_blank">HTML & CSS</a>
+  					<a href="https://www.w3schools.com/js/" target="_blank">Java Script</a>
+  					<a href="https://www.w3schools.com/sql/" target="_blank">SQL</a>
+				</div>
+				<div id="main2">
+  					<span style="font-size:20px;cursor:pointer" onclick="openNav2()">&#9776; Programming</span>
+				</div>
+				<div id="mySidenav3" class="sidenav3">
+  					<a href="javascript:void(0)" class="closebtn3" onclick="closeNav3()">&times;</a>
+  					<h2 class="heading">Physics</h2>
+  					<a href="https://www.space.com/17661-theory-general-relativity.html" target="_blank">Theory of Relativity</a>
+  					<a href="http://bigbangtheory.wikia.com/wiki/Stephen_Hawking" target="_blank">Big Bang Theory</a>
+  					<a href="http://hyperphysics.phy-astr.gsu.edu/hbase/mod6.html" target="_blank">Black Body Radiotion</a>
+  					<a href="http://www.physicsclassroom.com/class/circles/Lesson-3/Newton-s-Law-of-Universal-Gravitation" target="_blank">Newton's Gravitational Law</a>
+				</div>
+				<div id="main3">
+  					<span style="font-size:20px;cursor:pointer" onclick="openNav3()">&#9776; Physics</span>
+				</div>		
+				
+			</div>
+			<div style="margin: 0px 1315px -8px 231px;">
+				<a href="#" style="margin: -124px 0px 0px 0px"><img class="profile" src="pics/profile.jpg" align="middle" hspace="20px"><p style="margin: 0px 0px 0px 1px;padding: 1px 36px 0px 0px; font-size: 14px;">Anonymous</p></a> 
+					<textarea name="message" rows="5" cols="70" placeholder="ask something..."></textarea>
+  				
+		 </div>
+
+</body>
+</html>

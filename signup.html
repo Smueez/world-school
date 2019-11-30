@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>World's School</title>
+    <link rel="icon" href="pics/logo.png">
+    <link rel="stylesheet" type="text/css" href="signup.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+<body>
+    <img src="pics/logo.png" style="width: 133px;margin: 10px 10px -40px 12px;">
+    <h1 class="page-header">WORLD'S SCHOOL</h1>
+    <div class="form-container">
+        <form action="" role="form">
+            <input id='step2' type='checkbox'>
+            <input id='step3' type='checkbox'>
+
+            <div id="part1" class="form-group" style="width: 451px;margin: -26px 0px 0px -63px;">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h1 class="panel-title" style="font-size: 24px;">Personal Details</h1>
+                    </div>
+                    <label for="name">First Name:</label>
+                    <input type="text" id="fname" class="form-control" placeholder="First Name">
+                    <label for="name">Last Name:</label>
+                    <input type="text" id="lname" class="form-control" placeholder="Last Name">
+                    <label for="name">Email:</label>
+                    <input type="email" id="email" class="form-control" placeholder="Email">
+                    <label for="name">Enter Password:</label>
+                    <input type="Password" id="password" class="form-control" placeholder="xxxxxxx">
+                    <label for="name">Re-enter Password:</label>
+                    <input type="Password" id="password" class="form-control" placeholder="xxxxxxx">
+                    <label for="name">Birth Date:</label>
+                    <div class="form-group row" style="margin: 0px -116px 10px 0px;">
+
+                        <div class="col-xs-2">
+                            <label for="ex1">Date</label>
+                            <input class="form-control" id="ex1" type="text" placeholder="DD">
+                        </div>
+                        <div class="col-xs-4">
+                            <label for="sel1">Month</label>
+                            <select class="form-control" id="sel1" placeholder="MMM">
+                                <option>Choose a Month</option>
+                                <option>January</option>
+                                <option>February</option>
+                                <option>March</option>
+                                <option>Aprill</option>
+                                <option>May</option>
+                                <option>June</option>
+                                <option>July</option>
+                                <option>Agust</option>
+                                <option>September</option>
+                                <option>October</option>
+                                <option>November</option>
+                                <option>December</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-3">
+                            <label for="ex3">Year</label>
+                            <input class="form-control" id="ex3" type="text" placeholder="YYYY">
+                        </div>
+                    </div>
+                    <label for="email">Country:</label>
+                    <input type="text" class="form-control" id="country" placeholder="Country" name="Country">
+                    <label for="sex">Select Sex:</label>
+                    <label class="radio-inline"><input type="radio" name="optradio">Male</label>
+                    <label class="radio-inline"><input type="radio" name="optradio">Female</label><br>
+                    <label for="email">Occupation:</label>
+                    <input type="text" class="form-control" id="occu" placeholder="student/employee" name="email">
+                    <label for="email">Institution/Company name:</label>
+                    <input type="text" class="form-control" id="Institution" placeholder="company,school,college,university" name="email">
+                    <label for="aboutyou">About you:</label>
+                    <textarea class="form-control" rows="5" id="comment" placeholder="Your interest,hobby,favorites etc"></textarea><br>
+                    <div class="btn-group btn-group-lg" role="group" aria-label="...">
+                        <label for='step2' id="continue-step2" class="continue">
+                            <div class="btn btn-default btn-success btn-lg">Next >></div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div id="part2" class="form-group" style="width: 451px;margin: -26px 0px 0px -63px;">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h1 class="panel-title" style="font-size: 24px;">Security Questions</h1>
+                    </div>
+                    <label for="name">Father's Name:</label>
+                    <input type="text" id="father" class="form-control" placeholder="Father's Name">
+                    <label for="number">Phone Number:</label>
+                    <input type="Phone" id="phone" class="form-control" placeholder="Phone/Mobile">
+                    <label for="name">Birth Place:</label>
+                    <input type="text" id="birthplace" class="form-control" placeholder="Birth Place">
+                    <label for="name">Favorite Food:</label>
+                    <input type="text" id="food" class="form-control" placeholder="Write Any">
+                    <label for="name">Favorite Place:</label>
+                    <input type="text" id="favplace" class="form-control" placeholder="Write Any"><br>
+                    <div class="btn-group btn-group-lg btn-group-justified" role="group" aria-label="...">
+
+                        <label for='step2' id="back-step2" class="back">
+                            <div class="btn btn-default btn-primary btn-lg" role="button"><< Previous</div>
+                        </label>
+
+
+                        <label for='step3' id="continue-step3" class="continue">
+                            <div class="btn btn-default btn-success btn-lg" role="button">Next >></div>
+                        </label>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="part3" class="form-group" style="width: 451px;margin: 0px 0px 0px -63px;">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h1 class="panel-title" style="font-size: 24px;">Profile Picture</h1>
+
+                    </div>
+                    <br>
+                    <img src="pics/profile.jpg" id="propic" style="width: 165px;"><br><br>
+                    <input type="text" id="brows" class="form-control"><button class="button"><span>Browse</span></button><br><br><button type="file" class="btn btn-primary">Upload</button><br><br>
+
+                    <div class="btn-group btn-group-lg" role="group" aria-label="...">
+                        <label for='step3' id="back-step3" class="back">
+                            <div class="btn btn-default btn-primary btn-lg"> << Previous</div>
+                        </label>
+                        <label class="continue">
+                            <button type="submit" class="btn btn-default btn-success btn-lg">Submit</button>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
